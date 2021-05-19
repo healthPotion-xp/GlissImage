@@ -2,6 +2,7 @@ body {
   background-color:#0000ff;
   filter: blur(35px) saturate(300%);
   overflow: hidden;
+
 }
 
 @font-face {
@@ -11,14 +12,16 @@ body {
 
 .scroll{
   font-family: Canopee;
-  font-size: 90vh;
   text-shadow: 0 0 50px #ff0000;
   color: transparent;
-  position: absolute;
-  animation: marquee 10s linear infinite;
+  font-size: 90vh;
+  animation: marquee1 50s linear infinite;
   display: block;
+  min-width: 100%;
   position: absolute;
   white-space: nowrap;
+  overflow: hidden;
+  padding: 1vh 0;
 }
 
 .scroll2{
@@ -26,14 +29,15 @@ body {
   font-size: 90vh;
   text-shadow: 0 0 50px #ff0000;
   color: transparent;
-  z-index: 9;
-  animation: marquee 10s linear infinite;
+  animation: marquee2 50s linear infinite;
   display: block;
   position: absolute;
   white-space: nowrap;
+  overflow: hidden;
+  padding: 1vh 0;
 }
 
-@keyframes marquee {
+@keyframes marquee1 {
   from {
     transform: translateX(100%);
   }
@@ -42,8 +46,11 @@ body {
   }
 }
 
-.container{
-  width: 100vw;
-  height: 100vh;
-  position: relative
+@keyframes marquee2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
