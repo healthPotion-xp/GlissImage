@@ -1,7 +1,7 @@
 body {
   background-color:#0000ff;
-  overflow: hidden;
   filter: blur(35px) saturate(300%);
+  overflow: hidden;
 }
 
 @font-face {
@@ -15,6 +15,10 @@ body {
   text-shadow: 0 0 50px #ff0000;
   color: transparent;
   position: absolute;
+  animation: marquee 10s linear infinite;
+  display: block;
+  position: absolute;
+  white-space: nowrap;
 }
 
 .scroll2{
@@ -23,9 +27,23 @@ body {
   text-shadow: 0 0 50px #ff0000;
   color: transparent;
   z-index: 9;
+  animation: marquee 10s linear infinite;
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .container{
   width: 100vw;
   height: 100vh;
+  position: relative
 }
