@@ -1,7 +1,9 @@
 body {
   background-color:#0000ff;
   filter: blur(35px) saturate(300%);
-  overflow: hidden;
+  overflow-x: hidden;
+  height:100%;
+  position:relative;
 
 }
 
@@ -21,7 +23,7 @@ body {
   position: absolute;
   white-space: nowrap;
   overflow: hidden;
-  padding: 1vh 0;
+
 }
 
 .scroll2{
@@ -34,7 +36,7 @@ body {
   position: absolute;
   white-space: nowrap;
   overflow: hidden;
-  padding: 1vh 0;
+
 }
 
 @keyframes marquee1 {
