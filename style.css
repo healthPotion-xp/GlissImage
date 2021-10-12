@@ -1,4 +1,54 @@
-body {
+body{
+  background-color:#FFFFFF;
+}
+
+@font-face {
+  font-family: 'Regular';
+  src: url('assets/NeueHaasGroteskText-Regular.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Bold';
+  src: url('assets/NeueHaasGroteskText-Bold.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Remix';
+  src: url('assets/GroteskRemix-Light.otf') format("opentype");
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  font-family: Regular;
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.contact{
+  color: black;
+  font-family: Bold;
+  text-align: center;
+  font-size: 10vh;
+  line-height: 50vh;
+}
+
+/* OLD VERSION - BANNER SCROLL */
+
+/* body {
   background-color:#0000ff;
   filter: blur(35px) saturate(300%);
   overflow-x: hidden;
@@ -21,7 +71,7 @@ body {
   display: block;
   min-width: 100%;
   position: absolute;
-  white-space: nowrap;
+  black-space: nowrap;
   overflow: hidden;
 
 }
@@ -34,7 +84,7 @@ body {
   animation: marquee2 50s linear infinite;
   display: block;
   position: absolute;
-  white-space: nowrap;
+  black-space: nowrap;
   overflow: hidden;
 
 }
@@ -55,4 +105,4 @@ body {
   to {
     transform: translateX(100%);
   }
-}
+} */
