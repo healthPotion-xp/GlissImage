@@ -1,5 +1,9 @@
 body{
   background-color:#FFFFFF;
+  background-image: url('./assets/daisy.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 @font-face {
